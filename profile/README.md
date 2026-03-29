@@ -137,16 +137,6 @@ solved.ac API로 난이도 티어까지 함께 기록됩니다.
 
 다음 프로젝트를 계획 중입니다. 아이디어가 구체화되면 여기에 추가됩니다.
 
-<br/>
-
-<div align="center">
-
-[![더 많은 프로젝트는 GitHub에서](https://img.shields.io/badge/더%20많은%20프로젝트는%20GitHub에서%20→-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KimnPark-Dev)
-
-</div>
-
-<br/>
-
 ---
 
 ## 📬 Contact
