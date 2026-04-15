@@ -18,14 +18,6 @@
 <table>
   <tr>
     <td valign="middle">
-      <img
-        src="https://github.com/user-attachments/assets/b873bc98-4942-4f69-804a-6452c50a0b82"
-        alt="KP logo"
-        width="30"
-        height="30"
-      />
-    </td>
-    <td valign="middle">
       <a href="https://www.kimnpark.site/">https://www.kimnpark.site/</a>
     </td>
   </tr>
