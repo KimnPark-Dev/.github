@@ -108,18 +108,41 @@ AWS Serverless, FastAPI 기반 서비스 구축과 LLM 활용
 
 ## 🚀 Projects
 
-### `01` AlgoNotion &nbsp; ![Status](https://img.shields.io/badge/●%20진행중-4ade80?style=flat-square) ![Date](https://img.shields.io/badge/2026.03%20—-6b7280?style=flat-square)
+### `01` TalkTime &nbsp; ![Status](https://img.shields.io/badge/Phase%201%20완료-4ade80?style=flat-square) ![Date](https://img.shields.io/badge/2026.04%20—-6b7280?style=flat-square)
 
-> **BOJ 맞았습니다 → Notion 자동 저장**
+> **GPS proximity 매칭 + 2D 메타버스 기반 실시간 스몰토크 플랫폼**
 
-백준(BOJ)에서 문제가 통과되는 순간, Chrome Extension이 자동으로
-코드와 메타데이터를 수집해 Notion 데이터베이스에 저장합니다.
-solved.ac API로 난이도 티어까지 함께 기록됩니다.
+닉네임 · 인스타그램 ID · GPS를 입력하고 입장하면, 실제 위치 기반 허브에 배치됩니다.
+2D 맵에서 근처 사람에게 커피 ☕ 또는 담배 🚬 대화를 신청하고, 상대가 수락하면
+30초 1:1 채팅이 시작됩니다. 종료 후 양측이 동의하면 인스타그램 ID를 교환합니다.
+
+| 분류 | 내용 |
+|------|------|
+| GPS 매칭 | Haversine 거리 계산 · 서울 5개 허브(강남 / 광화문 / 여의도 / 서초 / 구로가산) |
+| Realtime | socket.io 4 · 50ms 위치 동기화 (20Hz) · lerp(0.18) 보간 |
+| 대화 플로우 | 커피 / 담배 요청 → 30초 1:1 채팅 → 인스타그램 ID 교환 모달 |
+| 프라이버시 | 인스타그램 ID 서버에서만 보관, 양측 수락 시에만 채팅으로 공개 |
+
+![React](https://img.shields.io/badge/React%2018-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Canvas API](https://img.shields.io/badge/Canvas%20API-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+![socket.io](https://img.shields.io/badge/socket.io%204-010101?style=flat-square&logo=socketdotio&logoColor=white)
+
+---
+
+### `02` AlgoNotion &nbsp; ![Status](https://img.shields.io/badge/●%20출시%20완료-38bdf8?style=flat-square) ![Date](https://img.shields.io/badge/2026.03%20—%202026.04-6b7280?style=flat-square)
+
+> **BOJ·SWEA 풀이 기록을 Notion으로 저장**
+
+백준과 SWEA에서 풀이한 알고리즘 문제를 Notion 데이터베이스로 정리하는 Chrome Extension입니다.
+Chrome Web Store에 배포되어 실제 사용 가능한 상태입니다.
 
 | 분류 | 내용 |
 |------|------|
 | Extension | Content Script · Service Worker · Manifest V3 |
-| Integration | Notion API · solved.ac API · BOJ |
+| Integration | Notion API · solved.ac API · BOJ · SWEA |
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Chrome Extension](https://img.shields.io/badge/Chrome%20Extension-4285F4?style=flat-square&logo=googlechrome&logoColor=white)
@@ -127,15 +150,31 @@ solved.ac API로 난이도 티어까지 함께 기록됩니다.
 ![solved.ac](https://img.shields.io/badge/solved.ac-6b7280?style=flat-square)
 ![Manifest V3](https://img.shields.io/badge/Manifest%20V3-4285F4?style=flat-square)
 
-[![View on GitHub](https://img.shields.io/badge/View%20on%20GitHub-Extension%20Repo-181717?style=flat-square&logo=github)](https://github.com/KimnPark-Dev/AlgoNotion_Extention/tree/main)
+[![View on GitHub](https://img.shields.io/badge/GitHub-Extension%20Repo-181717?style=flat-square&logo=github)](https://github.com/KimnPark-Dev/AlgoNotion_Extention/tree/main)
 
 ---
 
-### `02` Next Project &nbsp; ![Status](https://img.shields.io/badge/Coming%20soon-6b7280?style=flat-square)
+### `03` MoveRadar &nbsp; ![Status](https://img.shields.io/badge/●%20해커톤%20출품%20완료-f59e0b?style=flat-square) ![Date](https://img.shields.io/badge/2026.04%20—%202026.04-6b7280?style=flat-square)
 
-> **만들고 있는 중...**
+> **이사 수요를 1~2개월 선행 탐지하는 Snowflake Native 인텔리전스 파이프라인**
 
-다음 프로젝트를 계획 중입니다. 아이디어가 구체화되면 여기에 추가됩니다.
+Snowflake KR Hackathon 2026 테크 트랙 출품작입니다.
+기존 CRM은 이미 관심을 드러낸 사람에게만 반응하지만, MoveRadar는 아직 이사를 인지하지 못한 사람을 **구조적 시장 신호**로 먼저 탐지합니다.
+
+| 분류 | 내용 |
+|------|------|
+| 데이터 소스 | Snowflake Marketplace 4개 — 아파트 시세(Dataknows) · 전입인구(Dataknows) · 통신 가동(삼성네트웍스) · 카드소비(SPH) |
+| Pipeline | 전처리 → 고객 프로파일 → Cortex Anomaly Detection(4모델) → REGION_ALERTS 통합 → LLM 문구 생성 |
+| 신호 가중치 | 시세 0.40 · 전입인구 0.25 · 통신 가동 0.20 · 카드소비 0.15 |
+| LLM | Cortex COMPLETE / mistral-large2 · 15가지 경보 유형별 맞춤 마케팅 카피 자동 생성 |
+| Dashboard | Streamlit Native App 4탭 — 경보 지도 · 신호 트렌드 · 마케팅 문구 · 렌탈/통신 트렌드 |
+
+![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=flat-square&logo=snowflake&logoColor=white)
+![Cortex ML](https://img.shields.io/badge/Cortex%20ML-29B5E8?style=flat-square)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![LLM](https://img.shields.io/badge/mistral--large2-6b7280?style=flat-square)
+![Hackathon](https://img.shields.io/badge/Hackathon-f59e0b?style=flat-square)
 
 ---
 
