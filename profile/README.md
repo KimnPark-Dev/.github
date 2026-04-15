@@ -15,6 +15,21 @@
 ### We build things together.
 
 <p>두 개발자가 아이디어를 코드로 만드는 공간</p>
+<table>
+  <tr>
+    <td valign="middle">
+      <img
+        src="https://github.com/user-attachments/assets/b873bc98-4942-4f69-804a-6452c50a0b82"
+        alt="KP logo"
+        width="30"
+        height="30"
+      />
+    </td>
+    <td valign="middle">
+      <a href="https://www.kimnpark.site/">https://www.kimnpark.site/</a>
+    </td>
+  </tr>
+</table>
 
 <br/>
 
